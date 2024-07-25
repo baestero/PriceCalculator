@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+input {
+  width: 100%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Remover o estilo padrão do WebKit */
+  width: 100%; /* Largura do input */
+  background: #ccc; /* Fundo transparente */
+  margin: 20px 0; /* Espaço ao redor do input */
+  border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    #c40c0c 0%,
+    #c40c0c var(--value, 50%),
+    #c40c0c var(--value, 50%),
+    #ddd 100%
+  );
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remover o estilo padrão do WebKit */
+  width: 20px;
+  height: 20px;
+  background: #c40c0c; /* Cor do polegar */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px; /* Ajustar o posicionamento vertical do polegar */
+}
+
+span {
+  display: block;
+  margin-bottom: 5px;
+  color: #c40c0c;
+}
+
+.tittle {
+  font-size: 0.725rem;
+  margin: 80px 20px;
+}
+
+.parcela {
+  display: none;
+  font-size: 0.725rem;
+}
+
+.taxa {
+  display: none;
+  font-size: 0.725rem;
+  padding: 0 20px;
+}
+
+.taxa,
+.parcela {
+  margin: 80px 20px 20px 0px;
+}
+
+.entradas {
+  padding: 0px 20px;
+}
+
+.valor-entrada,
+.juros-entrada,
+.parcela-entrada {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+
+.valor-entrada {
+  font-size: 7rem;
+}
+
+.juros-entrada,
+.parcela-entrada {
+  font-size: 5.7rem;
+  margin-bottom: 0px;
+}
+
+.mil {
+  font-size: 3rem;
+}
+
+.btn-continuar,
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.btn-continuar {
+  margin-top: 80px;
+}
+
+.btn {
+  margin-top: 40px;
+}
+
+.btn-continuar button {
+  display: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background-color: #c40c0c;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn button {
+  display: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background-color: #c40c0c;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn {
+  display: none;
+}
+
+.taxa-juros {
+  display: none;
+}
+
+.parcelas {
+  display: none;
+}
+
+.container-color {
+  background: #c40c0c;
+  display: none;
+}
+
+.container-resultado {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  align-items: end;
+  background: #c40c0c;
+  color: white;
+}
+
+.container-resultado h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.container-resultado-tittle {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.resultado {
+  background-color: rgb(243, 243, 243);
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+  height: 100vh;
+}
+
+.container-valor-total,
+.container-pagamento-mensal,
+.container-total-juros {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-size: 0.725rem;
+  background-color: white;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 20px 0;
+}
+
+.valor-total,
+.pagamento-mensal,
+.total-juros {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
